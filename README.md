@@ -19,6 +19,12 @@ From the customer's point of view they see the next 6 weeks of their deliveries,
 along with a tick stating they are due a delivery, or no tick stating they 
 aren't due a delivery.
 
+##### Weekly customer account example
+![weekly-customer](https://user-images.githubusercontent.com/11612604/58475093-ec13f180-8144-11e9-89a9-6899073e5efa.png)
+
+##### Fortnightly customer account example
+![fortnightly-customer](https://user-images.githubusercontent.com/11612604/58475264-63e21c00-8145-11e9-9035-891d541cf805.png)
+
 In the database we have a table called `upcoming_deliveries` which has an entry for
 each subscription's next 6 delivery days and whether it is part of the subscription's
 normal interval, in addition to whether it is set as a holiday, or is set as an opt_in delivery.
@@ -28,7 +34,7 @@ do it all in-memory.
 # The task
  - Fork this repository to your own GitHub account, create a new branch and do all
  your changes on this branch. When you are done please pull request your changes
- into master (Without merging!) so we can review the pull request.
+ into master (**Without merging!**) so we can review the pull request.
  - You can create or add any additional tests you may require, but please do not 
  modify any of the existing tests as these should all ideally pass at the end of
  the exercise.
