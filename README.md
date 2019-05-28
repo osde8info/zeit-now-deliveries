@@ -43,6 +43,14 @@ do it all in-memory.
  - Please do not delete any of the existing Entity & Service classes (or their methods),
  you may add additional methods, or change how existing methods work if needbe.
  
+#### Getting started
+
+- CD into the directory where you have cloned your fork of this repository and run `composer install`.
+- Run `./vendor/bin/phpunit`. The tests will initially fail, your task is to write the code
+that ensures they pass.
+- Once complete, commit and push the result to a new branch. Pull request the branch and send
+us the URL to review.
+ 
 # The business rules
 1) A subscription results in recurring deliveries. Each subscription has a specific
 delivery day (e.g. Tuesday) so the deliveries will always be on this day.
@@ -60,7 +68,7 @@ isn't charged.
 wouldn't have a delivery if they like the arrangement that week. They can still
 make holidays on their usual delivery days too.
 6) A customer shouldn't be able to make a holiday on a date they normally don't 
-have a delivery. Likewise they shoudln't be able to opt-in to an order if
+have a delivery. Likewise they shouldn't be able to opt-in to an order if
 it is their usual delivery interval.
 
 # Tips
